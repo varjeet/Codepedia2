@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class Profile_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("       <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\">\n");
+      out.write("       \n");
+      out.write("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n");
+      out.write("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>\n");
+      out.write("<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js\"></script>\n");
+      out.write("<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.7.0/css/all.css\" integrity=\"sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ\" crossorigin=\"anonymous\">\n");
+      out.write("<script src=\"Profile.js\" type=\"text/javascript\"></script>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body onload=\"fetch()\">\n");
+      out.write("        <div class=\"container-fluid\" style=\"background-image: linear-gradient(to bottom right,#7671fe,#82c9fa,#87f0ff) \">\n");
+      out.write("     \n");
+      out.write("            <div class=\"row\">\n");
+      out.write("            <div class=\"col-sm-7 col-12 p-5\" >\n");
+      out.write("                \n");
+      out.write("                <div class=\"col-sm-12 p-5\" >\n");
+      out.write("                    <h1       id=\"firstname\"     name=\"firstname\"      class=\"font-weight-bold  text-left display-1\" >Va</h1>\n");
+      out.write("                    \n");
+      out.write("                     <h1       id=\"lastname\"     name=\"lastname\"      class=\"font-weight-bold display-1 text-left\">Va</h1>\n");
+      out.write("                  <h4 class=\"mt-5\" id=\"description\">Description here</h4>\n");
+      out.write("                </div>\n");
+      out.write("                   \n");
+      out.write("                \n");
+      out.write("               \n");
+      out.write("                    <div class=\"col-sm-12 col-12 p-5\" >\n");
+      out.write("                  \n");
+      out.write("                        <!--update profile open modal-->\n");
+      out.write("                        \n");
+      out.write("                        <div class=\"row \">\n");
+      out.write("                       <h1 class=\"h1\"  >General Info</h1>\n");
+      out.write("                       <a  class=\" ml-5 mt-3\" href=\"#\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Update profile!\" ><i class=\"fas fa-pencil-alt\" data-toggle=\"modal\" data-target=\"#ProfileModal\"></i></a>\n");
+      out.write("                    \n");
+      out.write("                            </div>\n");
+      out.write("                        <script>\n");
+      out.write("$(document).ready(function(){\n");
+      out.write("  $('[data-toggle=\"tooltip\"]').tooltip();   \n");
+      out.write("});\n");
+      out.write("</script>\n");
+      out.write("\n");
+      out.write("                     <!---->\n");
+      out.write("                       \n");
+      out.write("                            <div class=\"row\">\n");
+      out.write("                                 <div class=\"col-3 \">\n");
+      out.write("                                         <h4 class=\"mt-4\">Username</h4>\n");
+      out.write("                                 </div>\n");
+      out.write("                                <div class=\"col-6\">\n");
+      out.write("                                        <h4 class=\"mt-4\" name=\"username\" id=\"username\">V</h4>\n");
+      out.write("                                 </div>\n");
+      out.write("                           </div>\n");
+      out.write("                        \n");
+      out.write("                              <div class=\"row\">\n");
+      out.write("                                 <div class=\"col-sm-3\">\n");
+      out.write("                                         <h4 class=\"mt-4\">E-mail</h4>\n");
+      out.write("                                 </div>\n");
+      out.write("                                <div class=\"col-sm-6\">\n");
+      out.write("                                        <h4 class=\"mt-4\" name=\"mail\" id=\"mail\">res</h4>\n");
+      out.write("                                 </div>\n");
+      out.write("                           </div>\n");
+      out.write("                        \n");
+      out.write("                              <div class=\"row\">\n");
+      out.write("                                 <div class=\"col-sm-3\">\n");
+      out.write("                                         <h4 class=\"mt-4\">Mobile</h4>\n");
+      out.write("                                 </div>\n");
+      out.write("                                <div class=\"col-sm-6\">\n");
+      out.write("                                        <h4 class=\"mt-4\" name=\"mobile\" id=\"mobile\">843</h4>\n");
+      out.write("                                         \n");
+      out.write("                                 </div>\n");
+      out.write("                           </div>\n");
+      out.write("                        \n");
+      out.write("                           \n");
+      out.write("                        </div>\n");
+      out.write("                 </div>\n");
+      out.write("                \n");
+      out.write("            <!--Profile Picture link-->\n");
+      out.write("    \n");
+      out.write("            <div class=\"col-sm-5 col-12 p-2\" >\n");
+      out.write("                <div class=\"col-sm-12 col-12 p-5 mt-5\" >\n");
+      out.write("             <a href=\"#\"     data-toggle=\"modal\" data-target=\"#PictureModal\"  >  <img class=\"img-fluid rounded-circle\"  alt=\"\" name=\"photo\" id=\"photo\" style=\"height:auto;width: 100%\"  data-toggle=\"tooltip\" data-placement=\"top\" title=\"Update profile Picture!\"/></a>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("         </div>\n");
+      out.write("    </div>\n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        <!--Modal for profile picture-->\n");
+      out.write(" <div class=\"container\" >\n");
+      out.write("  \n");
+      out.write("  <div class=\"modal fade\" id=\"PictureModal\" role=\"dialog\" >\n");
+      out.write("    <div class=\"modal-dialog\" >\n");
+      out.write("    \n");
+      out.write("      <!-- Modal content-->\n");
+      out.write("      <div class=\"modal-content\" style=\"background-image: linear-gradient(to bottom right,#7671fe,#82c9fa,#87f0ff) \">\n");
+      out.write("        <div class=\"modal-header\">\n");
+      out.write("          <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n");
+      out.write("          <h4 class=\"modal-title\"></h4>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"modal-body\">\n");
+      out.write("            \n");
+      out.write("            <img class=\"img-fluid rounded-circle\" alt=\"no privew available\" name=\"modalphoto\" id=\"modalphoto\" style=\"height:auto;width: 100%\"/>\n");
+      out.write("      \n");
+      out.write("            <!--button-->\n");
+      out.write("            \n");
+      out.write("  <div class=\"custom-file mt-3\" >\n");
+      out.write("      <input type=\"file\" class=\"custom-file-input\" id=\"dp_choser\" name=\"dp_choser\" accept=\"image/jpeg,image/png,image/jpg\"  > \n");
+      out.write("    <label class=\"custom-file-label\" for=\"customFile\">Choose file</label>\n");
+      out.write("  </div>\n");
+      out.write("<script>\n");
+      out.write("// Add the following code if you want the name of the file appear on select\n");
+      out.write("$(\".custom-file-input\").on(\"change\", function() {\n");
+      out.write("  var fileName = $(this).val().split(\"\\\\\").pop();\n");
+      out.write("  $(this).siblings(\".custom-file-label\").addClass(\"selected\").html(fileName);\n");
+      out.write("});\n");
+      out.write("</script>\n");
+      out.write("<div class=\"d-flex justify-content-center mt-3\">\n");
+      out.write("    <input type=\"submit\" class=\"btn btn-outline-primary\" value=\"Upload\"  onclick=\"changePic()\" class=\"close\" data-dismiss=\"modal\" />\n");
+      out.write("    </div>\n");
+      out.write("   \n");
+      out.write("      <!--button-->\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"modal-footer\">\n");
+      out.write("          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n");
+      out.write("        </div>\n");
+      out.write("      </div>\n");
+      out.write("      \n");
+      out.write("    </div>\n");
+      out.write("  </div>\n");
+      out.write("  \n");
+      out.write("</div>\n");
+      out.write("        <!--Modal-->        \n");
+      out.write("     \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        <!--Modal for updating profile-->\n");
+      out.write("        \n");
+      out.write("         <div class=\"container\" >\n");
+      out.write("                <div class=\"modal fade\" id=\"ProfileModal\" role=\"dialog\" >\n");
+      out.write("                     <div class=\"modal-dialog\" >\n");
+      out.write("    \n");
+      out.write("      <!-- Modal content-->\n");
+      out.write("                            <div class=\"modal-content\" style=\"background-image: linear-gradient(to bottom right,#7671fe,#82c9fa,#87f0ff) \">\n");
+      out.write("                                  <div class=\"modal-header\">\n");
+      out.write("                                     <h4 class=\"modal-title\">Update Profile</h4>\n");
+      out.write("                                  </div>\n");
+      out.write("                            <div class=\"modal-body\">\n");
+      out.write("            \n");
+      out.write("           \n");
+      out.write("                   <form class=\"was-validated\">\n");
+      out.write("                       <div class=\"form-group \">\n");
+      out.write("                              <label>Firstname</label>\n");
+      out.write("                             <input id=\"modal_firstname\" class=\"form-control \"  name=\"modal_firstname\" required>   \n");
+      out.write("                              \n");
+      out.write("                       </div>\n");
+      out.write("               \n");
+      out.write("                      <div class=\"form-group  \">\n");
+      out.write("                            <label>Lastname</label>\n");
+      out.write("                           <input type=\"text\" id=\"modal_lastname\" class=\"form-control \" name=\"modal_lastname\" required>    \n");
+      out.write("                       </div>\n");
+      out.write("                 \n");
+      out.write("                     <div class=\"form-group\">\n");
+      out.write("                          <label>Mobile</label>\n");
+      out.write("                         <input type=\"text\" id=\"modal_mobile\" class=\"form-control \"  name=\"modal_mobile\" required>    \n");
+      out.write("                    </div>\n");
+      out.write("                 \n");
+      out.write("                   <div class=\"form-group\">\n");
+      out.write("                         <label for=\"comment\">Description:</label>\n");
+      out.write("                         <textarea class=\"form-control\" rows=\"4\" id=\"modal_description\" name=\"description\"></textarea>\n");
+      out.write("                   </div>\n");
+      out.write("       </form>\n");
+      out.write("           \n");
+      out.write("            \n");
+      out.write("            \n");
+      out.write("      \n");
+      out.write("           <!--submit button-->\n");
+      out.write(" \n");
+      out.write("                 <div class=\"d-flex justify-content-center mt-3\">\n");
+      out.write("                      <input type=\"submit\" class=\"btn btn-outline-primary\" value=\"Upload\"  onclick=\"changeProfile()\" class=\"close\" data-dismiss=\"modal\" />\n");
+      out.write("                  </div>\n");
+      out.write("   \n");
+      out.write("      <!--button-->\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"modal-footer\">\n");
+      out.write("          <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n");
+      out.write("        </div>\n");
+      out.write("      </div>\n");
+      out.write("      \n");
+      out.write("    </div>\n");
+      out.write("  </div>\n");
+      out.write("  \n");
+      out.write("</div>\n");
+      out.write("\n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("               <!---->\n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("        \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
